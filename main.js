@@ -24,3 +24,7 @@ listContainer.addEventListener("click",function(e){
     }
 
 },false)
+
+function saveTask(){
+    localStorage.setItem("task",listContainer.innerHTML);
+}    
