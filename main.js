@@ -28,3 +28,8 @@ listContainer.addEventListener("click",function(e){
 function saveTask(){
     localStorage.setItem("task",listContainer.innerHTML);
 }    
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("task");
+}
+showTask();
+
